@@ -1,0 +1,236 @@
+/* GOOGLE FONT
+// <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+*/
+
+/*
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+/* HTML STYLES */
+
+html {
+    background-image: url(images/xSecure_matrix_background_2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* BODY */
+
+body { 
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+p {
+    color: azure;
+}
+
+/* HEADER */
+
+header {
+    background-color: azure;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    gap: 24px;
+}
+
+header img {
+    width: auto;
+    height: 95px;
+}
+
+/* NAVIGATION BAR */
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;          
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #00ff4c;
+    text-decoration-thickness: 3px;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;           
+    left: auto;
+    right: 0;
+    background-color: azure;
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+    min-width: 220px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    border-radius: 6px;
+    z-index: 20;
+}
+
+.dropdown-menu li {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 16px;
+    color: #000;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background-color: #001733;
+    color: #00ff4c;   
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: azure;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MAIN CONTENT */
+
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* XSECURE-INTRO SECTION (WRAPPER) */
+
+.xsecure-intro {
+    width: 100%;
+}
+
+/* TWO COLUMN LAYOUT */
+
+.xsecure-layout {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+/* BOX STYLES - LAYOUT */
+
+.xsecure-card {
+    background: rgba(3, 25, 60, 0.60);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    /*backdrop-filter: blur(4px);*/      /* enable if you want glass effect */
+}
+
+/* LEFT BOX IMAGE */
+
+.xsecure-card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* RIGHT BOX TEXT */
+
+.xsecure-heading {
+    margin-top: 0;
+    font-weight: 600;
+    color: #00ff4c;   /* xSecure green */
+}
+
+.xsecure-card-text p {
+    margin-bottom: 0;
+}
+
+/* RESPONSIVE: STACK ON SMALLER SCREENS */
+
+@media (max-width: 900px) {
+    .xsecure-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .xsecure-card {
+        padding: 20px;
+    }
+
+    .content {
+        padding: 20px 16px;
+    }
+}
+
+/* HEADER + NAV behavior on phones/tablets */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 16px;
+    }
+
+    header img {
+        height: 90px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    nav ul li {
+        font-size: 16px;
+    }
+}
