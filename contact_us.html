@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="keywords" content="Information Technology, IT, Cybersecurity, xSecure" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>xSecure - Media</title>
+<title>xSecure - Contact Us</title>
 <link href="xs_stylesheet.css" rel="stylesheet" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +18,13 @@
     <a href="index.html">    
     <img src="images/xSecure_logo_1.png" alt="logo">
     </a>
+    
     <!-- VERTICAL NAVIGATION BAR -->
     <nav>
         <ul>
             <li><a href="xs_about.html">About</a></li>
             <li><a href="xs_blog.html">Blog</a></li>
+    
     <!-- DROPDOWN MENU -->
             <li class="dropdown">
              <a href="#">Begin Here</a>
@@ -37,26 +39,38 @@
     </nav>
     </header>
 
-    <main class="content">
-    <!-- SECTION -->
-     <section class="xsecure-intro">
-        <div class="xsecure-layout">
-    <!-- LEFT COLUMN -->
-     <div class="xsecure-card xsecure-card-image">
-        <img src="images/xSecure_logo_3.png" alt="xSecure visual">
-     </div>
-    <!-- RIGHT COLUMN -->
-    <div class="xsecure-card xsecure-card-text">
-        <h1 class="xsecure-heading">xSecure Media</h1>
-          <p>xSecure is a modern cybersecurity-focused brand dedicated to helping individuals and small businesses
-            protect their digital world with clarity and confidence. We believe security should be simple, accessible,
-            and empowering—not confusing. Through practical guidance, educational resources, and user-friendly tools,
-            xSecure delivers straightforward solutions to strengthen online safety, privacy, and awareness. 
-            Our mission is to break down complex cybersecurity concepts into easy-to-understand steps so anyone can secure
-            their devices, data, and digital presence with confidence.</p>
-    </div>
+    <!-- CONTACT US FORM -->
+    <main class="contact-wrapper">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <form class="contact-form">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label>Preferred Contact</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                        <input type="radio" name="preferred" value="phone" required>
+                        Phone
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="preferred" value="email" required>
+                        Email
+                    </label>
+                    </div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" maxlength="1000" required></textarea>
+                <div class="form-buttons">
+                    <button type="reset" class="reset-btn">Reset</button>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
         </div>
-     </section>
     </main>
 
     <!-- FOOTER -->

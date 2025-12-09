@@ -1,6 +1,99 @@
-<!-- About -->
+<!-- HOME - CONTENT -->
 
 xSecure is a modern cybersecurity-focused brand dedicated to helping individuals and small businesses protect their digital world with clarity and confidence.
 We believe security should be simple, accessible, and empowering—not confusing.
 Through practical guidance, educational resources, and user-friendly tools, xSecure delivers straightforward solutions to strengthen online safety, privacy, and awareness.
 Our mission is to break down complex cybersecurity concepts into easy-to-understand steps so anyone can secure their devices, data, and digital presence with confidence.
+
+<!-- ABOUT / MISSION STATEMENT CONTENT -->
+
+About xSecure
+
+xSecure is a modern cybersecurity learning platform designed to help beginners understand and protect the digital world around them.
+Whether you’re exploring IT for the first time or building toward a career in cybersecurity, xSecure breaks down complex topics into clear, practical, and real-world guidance.
+Founded on the belief that cybersecurity should be accessible to everyone, xSecure provides easy-to-follow lessons, tools, and resources inspired by real IT and security environments.
+From understanding basic online safety to learning how networks, systems, and cyber threats work, xSecure empowers individuals and small businesses to stay secure with confidence.
+
+Our content is built with clarity, accuracy, and hands-on relevance—bridging the gap between learning and doing.
+We aim to become a trusted source for cybersecurity fundamentals and a launchpad for anyone striving to strengthen their skills, secure their digital footprint, or advance in the IT industry.
+
+Mission Statement
+
+Our mission is to make cybersecurity simple, actionable, and accessible for everyone.
+xSecure strives to:
+
+Educate individuals and small businesses with clear and practical cybersecurity knowledge.
+
+Empower beginners with the skills they need to stay safe online and understand modern digital threats.
+
+Inspire confidence by breaking down complex IT and security concepts into easy-to-learn lessons.
+
+Support future technology professionals through high-quality resources that encourage growth and real-world readiness.
+
+At xSecure, we believe cybersecurity isn’t just for experts—it’s a skill every person deserves to understand and use to protect themselves in today’s connected world.
+
+<!-- RESOURCES -->
+
+https://www.iconpacks.net/
+
+/* CSS */
+
+/* RESPONSIVE: STACK ON SMALLER SCREENS */
+
+@media (max-width: 900px) {
+    .xsecure-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .xsecure-card {
+        padding: 20px;
+    }
+
+    .content {
+        padding: 20px 16px;
+    }
+}
+
+/* HEADER + NAV behavior on phones/tablets */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 16px;
+    }
+
+    header img {
+        height: 90px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    nav ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-main {
+        padding: 2rem 1.25rem 1.75rem;
+    }
+
+    .topic-card {
+        height: 170px;
+    }
+}
+
+@media (max-width: 700px) {
+    .topic-grid {
+        gap: 1rem;
+    }
+
+    .topic-card {
+        flex: 1 1 100%;
+        height: 165px;
+    }
+}
