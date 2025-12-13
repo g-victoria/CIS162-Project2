@@ -5,6 +5,12 @@
     <meta name="keywords" content="Information Technology, IT, Cybersecurity, xSecure" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>xSecure - Blog</title>
+<!-- BOOT STRAP CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+<!-- CSS -->
 <link href="xs_stylesheet.css" rel="stylesheet" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,27 +43,153 @@
     </nav>
     </header>
 
-    <main class="content">
-    <!-- SECTION -->
-     <section class="xsecure-intro">
-        <div class="xsecure-layout">
-    <!-- LEFT COLUMN -->
-     <div class="xsecure-card xsecure-card-image">
-        <img src="images/xSecure_logo_3.png" alt="xSecure visual">
-     </div>
-    <!-- RIGHT COLUMN -->
-    <div class="xsecure-card xsecure-card-text">
-        <h1 class="xsecure-heading">xSecure Blog</h1>
-          <p>xSecure is a modern cybersecurity-focused brand dedicated to helping individuals and small businesses
-            protect their digital world with clarity and confidence. We believe security should be simple, accessible,
-            and empowering—not confusing. Through practical guidance, educational resources, and user-friendly tools,
-            xSecure delivers straightforward solutions to strengthen online safety, privacy, and awareness. 
-            Our mission is to break down complex cybersecurity concepts into easy-to-understand steps so anyone can secure
-            their devices, data, and digital presence with confidence.</p>
-    </div>
+<!-- BLOG PAGE MAIN CONTENT -->
+<main class="xsecure-blog-main"> 
+    <section class="container xsecure-blog-layout">
+        <div class="row xsecure-blog-row">
+            <!-- LEFT COLUMN -->
+            <div class="col-4 xsecure-blog-sidebar">
+                <!-- BLOG INTRO BOX -->
+                <div class="xsecure-blog-intro">
+                    <h1 class="h3">Blog</h1>
+                    <p>
+                        Explore xSecure articles focused on practical cybersecurity tips for everyday users
+                        and small businesses. Start with the basics, then dive deeper into the topics that
+                        matter most to you.
+                    </p>
+                </div>
+
+                <!-- ACCORDION AREA -->
+                <div class="accordion xsecure-accordion" id="blogAccordion">
+                    <!-- ITEM 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="blogHeadingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#blogCollapseOne" aria-expanded="false"
+                                    aria-controls="blogCollapseOne">
+                                How to use this blog
+                            </button>
+                        </h2>
+                        <div id="blogCollapseOne"
+                             class="accordion-collapse collapse"
+                             role="region"
+                             aria-labelledby="blogHeadingOne"
+                             data-bs-parent="#blogAccordion">
+                        <div class="accordion-body">
+                             Start with beginner-friendly articles, then move into topics like passwords,
+                             safe browsing, and home network security. Each post focuses on clear,
+                             step-by-step guidance you can apply right away.
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- ITEM 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="blogHeadingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#blogCollapseTwo" aria-expanded="false"
+                                    aria-controls="blogCollapseTwo">
+                                Blog topics we cover
+                            </button>
+                        </h2>
+                        <div id="blogCollapseTwo"
+                             class="accordion-collapse collapse"
+                             role="region"
+                             aria-labelledby="blogHeadingTwo"
+                             data-bs-parent="#blogAccordion">
+                        <div class="accordion-body">
+                                <ul>
+                                    <li>Passwords &amp; Multi-Factor Authentication (MFA)</li>
+                                    <li>Internet security &amp; safe browsing habits</li>
+                                    <li>Device &amp; home network security</li>
+                                    <li>Privacy basics &amp; scam awareness</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="blogHeadingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#blogCollapseThree" aria-expanded="false"
+                                    aria-controls="blogCollapseThree">
+                                Who this blog is for
+                            </button>
+                        </h2>
+                        <div id="blogCollapseThree"
+                             class="accordion-collapse collapse"
+                             role="region"
+                             aria-labelledby="blogHeadingThree"
+                             data-bs-parent="#blogAccordion">
+                            <div class="accordion-body">
+                                xSecure is designed for people who are new to cybersecurity, along with
+                                small business owners and anyone who wants straightforward, non-technical
+                                advice to stay safer online.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="col-8 xsecure-featured-column">
+                <!-- CENTER CARDS -->
+                <div class="xsecure-cardgroup-wrapper">
+                    <div class="card-group xsecure-cardgroup">
+                        <!-- CARD 1 -->
+                        <div class="card xsecure-card">
+                            <img src="images/xs_pw_mfa.png" class="card-img-top"
+                                 alt="Passwords & MFA icon">
+                            <div class="card-body">
+                                <h5 class="card-title">5 Password Mistakes to Avoid</h5>
+                                <p class="card-text">
+                                    Learn the most common password mistakes people make and how to fix them
+                                    with stronger, safer habits.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Article coming soon</small>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="card xsecure-card">
+                            <img src="images/xs_internet_sec.png" class="card-img-top"
+                                 alt="Internet security icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Safe Browsing Basics</h5>
+                                <p class="card-text">
+                                    Understand how to spot sketchy websites, avoid malicious links,
+                                    and keep your browser settings safer.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Article coming soon</small>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="card xsecure-card">
+                            <img src="images/xs_device_network.png" class="card-img-top"
+                                 alt="Network security icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Secure Your Home Wi-Fi</h5>
+                                <p class="card-text">
+                                    A quick guide to changing default router settings, using strong Wi-Fi
+                                    passwords, and choosing the right encryption.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Article coming soon</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-     </section>
-    </main>
+    </section>
+</main>
 
     <!-- FOOTER -->
     <footer class="site-footer">
@@ -65,24 +197,28 @@
         <p>© 2025 xSecure</p>
 
         <div class="footer-social">
-            <a href="https://x.com" target="_blank">
-                <img src="images/x_icon_28px.png" alt="X">
-            </a>
-            <a href="https://youtube.com" target="_blank">
-                <img src="images/xs_youtube-32.png" alt="YouTube">
-            </a>
-            <a href="https://linkedin.com" target="_blank">
-                <img src="images/xs_linkedin-32.png" alt="LinkedIn">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/xs_instagram-32.png" alt="Instagram">
-            </a>
+        <a href="https://x.com" target="_blank" rel="noopener">
+            <img src="images/x_icon_28px.png" alt="X">
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener">
+            <img src="images/xs_youtube-32.png" alt="YouTube">
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">
+            <img src="images/xs_linkedin-32.png" alt="LinkedIn">
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">
+            <img src="images/xs_instagram-32.png" alt="Instagram">
+        </a>
         </div>
 
-        <!-- CONTACT US -->
-        <a href="contact_us.html" class="contact-btn">Contact Us</a>     
-        </div>
-        </footer>
+        <a href="contact_us.html" class="contact-btn">Contact Us</a>
+    </div>
+    </footer>
+
+    <!-- BOOT STRAP JS -->    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
 
 </body>
 
