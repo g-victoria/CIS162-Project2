@@ -33,9 +33,9 @@
             <li class="dropdown">
              <a href="#">Begin Here</a>
              <ul class="dropdown-menu">
-                <li><a href="xs_passwords.html">Passwords &amp; MFA</a></li>
+                <li><a href="xs_passwords_mfa.html">Passwords &amp; MFA</a></li>
                 <li><a href="xs_internet_security.html">Internet Security</a></li>
-                <li><a href="xs_device_network.html">Device &amp; Network Security</a></li>
+                <li><a href="xs_device_network_sec.html">Device &amp; Network Security</a></li>
              </ul>
             </li> 
             <li><a href="xs_media.html">Media</a></li>
@@ -44,151 +44,163 @@
     </header>
 
 <!-- BLOG PAGE MAIN CONTENT -->
-<main class="xsecure-blog-main"> 
-    <section class="container xsecure-blog-layout">
-        <div class="row xsecure-blog-row">
-            <!-- LEFT COLUMN -->
-            <div class="col-4 xsecure-blog-sidebar">
-                <!-- BLOG INTRO BOX -->
-                <div class="xsecure-blog-intro">
-                    <h1 class="h3">Blog</h1>
-                    <p>
-                        Explore xSecure articles focused on practical cybersecurity tips for everyday users
-                        and small businesses. Start with the basics, then dive deeper into the topics that
-                        matter most to you.
-                    </p>
-                </div>
+<main class="page-wrap xsecure-blog-main">
+  <section class="xsecure-blog-layout">
+    <div class="xsecure-blog-row">
 
-                <!-- ACCORDION AREA -->
-                <div class="accordion xsecure-accordion" id="blogAccordion">
-                    <!-- ITEM 1 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="blogHeadingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#blogCollapseOne" aria-expanded="false"
-                                    aria-controls="blogCollapseOne">
-                                How to use this blog
-                            </button>
-                        </h2>
-                        <div id="blogCollapseOne"
-                             class="accordion-collapse collapse"
-                             role="region"
-                             aria-labelledby="blogHeadingOne"
-                             data-bs-parent="#blogAccordion">
-                        <div class="accordion-body">
-                             Start with beginner-friendly articles, then move into topics like passwords,
-                             safe browsing, and home network security. Each post focuses on clear,
-                             step-by-step guidance you can apply right away.
-                        </div>
-                    </div>
-                </div>
+      <!-- LEFT COLUMN -->
+      <div class="xsecure-blog-sidebar">
 
-                    <!-- ITEM 2 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="blogHeadingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#blogCollapseTwo" aria-expanded="false"
-                                    aria-controls="blogCollapseTwo">
-                                Blog topics we cover
-                            </button>
-                        </h2>
-                        <div id="blogCollapseTwo"
-                             class="accordion-collapse collapse"
-                             role="region"
-                             aria-labelledby="blogHeadingTwo"
-                             data-bs-parent="#blogAccordion">
-                        <div class="accordion-body">
-                                <ul>
-                                    <li>Passwords &amp; Multi-Factor Authentication (MFA)</li>
-                                    <li>Internet security &amp; safe browsing habits</li>
-                                    <li>Device &amp; home network security</li>
-                                    <li>Privacy basics &amp; scam awareness</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ITEM 3 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="blogHeadingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#blogCollapseThree" aria-expanded="false"
-                                    aria-controls="blogCollapseThree">
-                                Who this blog is for
-                            </button>
-                        </h2>
-                        <div id="blogCollapseThree"
-                             class="accordion-collapse collapse"
-                             role="region"
-                             aria-labelledby="blogHeadingThree"
-                             data-bs-parent="#blogAccordion">
-                            <div class="accordion-body">
-                                xSecure is designed for people who are new to cybersecurity, along with
-                                small business owners and anyone who wants straightforward, non-technical
-                                advice to stay safer online.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- RIGHT COLUMN -->
-            <div class="col-8 xsecure-featured-column">
-                <!-- CENTER CARDS -->
-                <div class="xsecure-cardgroup-wrapper">
-                    <div class="card-group xsecure-cardgroup">
-                        <!-- CARD 1 -->
-                        <div class="card xsecure-card">
-                            <img src="images/xs_pw_mfa.png" class="card-img-top"
-                                 alt="Passwords & MFA icon">
-                            <div class="card-body">
-                                <h5 class="card-title">5 Password Mistakes to Avoid</h5>
-                                <p class="card-text">
-                                    Learn the most common password mistakes people make and how to fix them
-                                    with stronger, safer habits.
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Article coming soon</small>
-                            </div>
-                        </div>
-
-                        <!-- CARD 2 -->
-                        <div class="card xsecure-card">
-                            <img src="images/xs_internet_sec.png" class="card-img-top"
-                                 alt="Internet security icon">
-                            <div class="card-body">
-                                <h5 class="card-title">Safe Browsing Basics</h5>
-                                <p class="card-text">
-                                    Understand how to spot sketchy websites, avoid malicious links,
-                                    and keep your browser settings safer.
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Article coming soon</small>
-                            </div>
-                        </div>
-
-                        <!-- CARD 3 -->
-                        <div class="card xsecure-card">
-                            <img src="images/xs_device_network.png" class="card-img-top"
-                                 alt="Network security icon">
-                            <div class="card-body">
-                                <h5 class="card-title">Secure Your Home Wi-Fi</h5>
-                                <p class="card-text">
-                                    A quick guide to changing default router settings, using strong Wi-Fi
-                                    passwords, and choosing the right encryption.
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Article coming soon</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- BLOG INTRO BOX -->
+        <div class="xsecure-blog-intro">
+          <h1 class="h3">Blog</h1>
+          <p>
+            Explore xSecure articles focused on practical cybersecurity tips for everyday users
+            and small businesses. Start with the basics, then dive deeper into the topics that
+            matter most to you.
+          </p>
         </div>
-    </section>
+
+        <!-- ACCORDION AREA -->
+        <div class="accordion xsecure-accordion" id="blogAccordion">
+
+          <!-- ITEM 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="blogHeadingOne">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#blogCollapseOne"
+                      aria-expanded="false"
+                      aria-controls="blogCollapseOne">
+                How to use this blog
+              </button>
+            </h2>
+
+            <div id="blogCollapseOne"
+                 class="accordion-collapse collapse"
+                 role="region"
+                 aria-labelledby="blogHeadingOne"
+                 data-bs-parent="#blogAccordion">
+              <div class="accordion-body">
+                Start with beginner-friendly articles, then move into topics like passwords,
+                safe browsing, and home network security. Each post focuses on clear,
+                step-by-step guidance you can apply right away.
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="blogHeadingTwo">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#blogCollapseTwo"
+                      aria-expanded="false"
+                      aria-controls="blogCollapseTwo">
+                Blog topics we cover
+              </button>
+            </h2>
+
+            <div id="blogCollapseTwo"
+                 class="accordion-collapse collapse"
+                 role="region"
+                 aria-labelledby="blogHeadingTwo"
+                 data-bs-parent="#blogAccordion">
+              <div class="accordion-body">
+                <ul>
+                  <li>Passwords &amp; Multi-Factor Authentication (MFA)</li>
+                  <li>Internet security &amp; safe browsing habits</li>
+                  <li>Device &amp; home network security</li>
+                  <li>Privacy basics &amp; scam awareness</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="blogHeadingThree">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#blogCollapseThree"
+                      aria-expanded="false"
+                      aria-controls="blogCollapseThree">
+                Who this blog is for
+              </button>
+            </h2>
+
+            <div id="blogCollapseThree"
+                 class="accordion-collapse collapse"
+                 role="region"
+                 aria-labelledby="blogHeadingThree"
+                 data-bs-parent="#blogAccordion">
+              <div class="accordion-body">
+                xSecure is designed for people who are new to cybersecurity, along with
+                small business owners and anyone who wants straightforward, non-technical
+                advice to stay safer online.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="xsecure-featured-column">
+        <div class="xsecure-cardgroup-wrapper">
+          <div class="card-group xsecure-cardgroup">
+
+            <!-- CARD 1 -->
+            <div class="card xsecure-card">
+              <img src="images/xs_pw_mfa.png" class="card-img-top" alt="Passwords &amp; MFA icon">
+              <div class="card-body">
+                <h5 class="card-title">5 Password Mistakes to Avoid</h5>
+                <p class="card-text">
+                  Learn the most common password mistakes people make and how to fix them
+                  with stronger, safer habits.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Article coming soon</small>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card xsecure-card">
+              <img src="images/xs_internet_sec.png" class="card-img-top" alt="Internet security icon">
+              <div class="card-body">
+                <h5 class="card-title">Safe Browsing Basics</h5>
+                <p class="card-text">
+                  Understand how to spot sketchy websites, avoid malicious links,
+                  and keep your browser settings safer.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Article coming soon</small>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="card xsecure-card">
+              <img src="images/xs_device_network.png" class="card-img-top" alt="Network security icon">
+              <div class="card-body">
+                <h5 class="card-title">Secure Your Home Wi-Fi</h5>
+                <p class="card-text">
+                  A quick guide to changing default router settings, using strong Wi-Fi
+                  passwords, and choosing the right encryption.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Article coming soon</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 </main>
 
     <!-- FOOTER -->
